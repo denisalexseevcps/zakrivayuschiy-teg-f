@@ -12,6 +12,7 @@
   --mix-blend-color: var(--page-background);
   --stroke-color: var(--text-color);
   --label-stroke-color: var(--page-background);
+  font-variation-settings: "wght" 400;
 }
 
 :root.theme-dark {
@@ -26,4 +27,5 @@
   --mix-blend-color: var(--text-color);
   --stroke-color: var(--text-color);
   --label-stroke-color: var(--page-background);
+  font-variation-settings: "wght" 465;
 }

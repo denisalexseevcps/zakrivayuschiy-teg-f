@@ -47,7 +47,7 @@ ol {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
-  overflow: hidden;
+  overflow: auto;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
