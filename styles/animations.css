@@ -1,5 +1,3 @@
-/* Animation */
-
 .theme-menu__button:disabled::before {
   animation: arrow-animation 0.5s ease-in-out infinite alternate;
 }
