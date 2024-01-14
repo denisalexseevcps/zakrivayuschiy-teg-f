@@ -1,6 +1,6 @@
 .page {
   font-variation-settings: var(--text-font-weight);
-  min-inline-size: 320px;
+  min-inline-size: 300px;
   min-block-size: 100dvb;
   color: var(--text-color);
   background: repeating-linear-gradient(
@@ -217,7 +217,7 @@
 
 .ok-button {
   text-transform: uppercase;
-  width: 100%;
+  width: calc( 100% - 4px);
   padding: 10px 0;
   background: var(--page-background);
 }
