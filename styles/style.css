@@ -1,5 +1,3 @@
-/* Body */
-
 .page {
   font-variation-settings: var(--text-font-weight);
   min-inline-size: 320px;
@@ -28,8 +26,6 @@
   background-size: cover;
 }
 
-/* Photo filters */
-
 .grayscale {
   filter: grayscale(50%);
 }
@@ -57,8 +53,6 @@
 .multi-filter {
   filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%) blur(2px);
 }
-
-/* Image labels */
 
 .image-label {
   font-family: var(--fantasy-font-family);
@@ -89,8 +83,6 @@
     top: 24px;
   }
 }
-
-/* SVG */
 
 .floppy-image {
   width: 21px;
@@ -165,8 +157,6 @@
   fill: var(--heart-color);
 }
 
-/* Buttons */
-
 .button {
   font-family: var(--fantasy-font-family);
   font-size: 14px;
@@ -232,15 +222,11 @@
   background: var(--page-background);
 }
 
-/* Main */
-
 .main {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-
-/* Header */
 
 .header {
   font-family: var(--fantasy-font-family);
@@ -252,10 +238,8 @@
 }
 
 .header__link {
-  /* font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); */
   font-size: clamp(2.8rem, 2.3104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
-  /* padding: 14px 0 14px; */
 }
 
 .header__title {
