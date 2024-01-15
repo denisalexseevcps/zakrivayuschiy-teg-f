@@ -2,12 +2,29 @@
   --main-font-family: Inter, sans-serif;
   --fantasy-font-family: "Press Start 2P", fantasy;
   --heart-color: #ff0000;
+  --bg-img: repeating-linear-gradient(
+    90deg,
+    var(--background-color_1),
+    var(--background-color) 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  repeating-linear-gradient(
+    180deg,
+    var(--background-color-start),
+    var(--background-color-end) 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  repeating-linear-gradient(180deg, var(--background-color-start) 0.01%,
+  var(--background-color-end))
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --page-background: #fff;
-    --background-color: #d3d3d3;
+    --background-color: #fff;
+    --background-color_1: #d3d3d3;
     --background-color-start: #e7e7e7;
     --background-color-end: #1a1a1a;
     --title-font-weight: "wght" 700;
@@ -23,7 +40,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --page-background: #000;
-    --background-color: var(--page-background);
+    --background-color:  #000;   /*var(--page-background); */
     --background-color-start: #007f0c;
     --background-color-end: #004306;
     --title-font-weight: "wght" 785;

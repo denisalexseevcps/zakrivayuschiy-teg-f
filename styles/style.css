@@ -4,7 +4,26 @@
   min-block-size: 100dvb;
   color: var(--text-color);
   background-color:  var(--background-color);
-  background: repeating-linear-gradient(
+  background-image: var(
+    --bg-img,
+    repeating-linear-gradient(
+      90deg,
+      var(--background-color_1),
+      var(--background-color) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      var(--background-color-start),
+      var(--background-color-end) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(180deg, var(--background-color-start) 0.01%,
+    var(--background-color-end))
+  );
+  /* background: repeating-linear-gradient(
       90deg,
       var(--background-color),
       var(--background-color) 2px,
@@ -22,9 +41,15 @@
       180deg,
       var(--background-color-start) 0.01%,
       var(--background-color-end)
-    );
-  background-attachment: fixed;
-  background-size: cover;
+    ); */
+  /* background-attachment: fixed; */
+  background-size: 100vw 100vh ;
+  background-repeat: no-repeat;
+}
+
+&:before{
+  content: '';
+  background-color:  var(--background-color);
 }
 
 .grayscale {
