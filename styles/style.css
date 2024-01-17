@@ -1,27 +1,15 @@
 .page {
   font-variation-settings: var(--text-font-weight);
+  
   min-inline-size: 300px;
   min-block-size: 100dvb;
   color: var(--text-color);
   background-color:  var(--background-color);
   background-image: var(
     --bg-img,
-    repeating-linear-gradient(
-      90deg,
-      var(--background-color),
-      var(--background-color) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      180deg,
-      var(--background-color-start),
-      var(--background-color-end) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(180deg, var(--background-color-start) 0.01%,
-    var(--background-color-end))
+    repeating-linear-gradient(90deg, var(--background-color) 0 2px,var(--background-color) 2px 4px),
+    repeating-linear-gradient(180deg, var(--background-color) 0 2px, var(--background-color) 2px 4px),
+    linear-gradient(180deg, var(--background-color-start) 0%, var(--background-color-end) 100%)
   );
   background-attachment: fixed;
   background-size: cover ;
@@ -158,12 +146,12 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-color);
-  transition: fill 0.3s ease-in 0.1s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-color);
-  transition: fill 0.3s ease-in 0.1s;
+  transition: fill 0.3s linear;
 }
 
 .button {
@@ -175,7 +163,7 @@
   background: none;
   border: 2px solid var(--stroke-color);
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .button::before {
@@ -360,6 +348,10 @@
   object-position: center;
 }
 
+.card_text {
+  line-height: 116.667% ;
+}
+
 .card__image-container {
   overflow: hidden;
   position: relative;
@@ -369,7 +361,7 @@
 
 .card__text-container {
   padding: 26px 25px;
-  font-size: 18px;
+  font-size: 18px;  
   display: flex;
   flex-direction: column;
   gap: 26px;
