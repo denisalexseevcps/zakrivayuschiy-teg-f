@@ -1,6 +1,7 @@
 :root {
   --main-font-family: Inter, sans-serif;
-  --fantasy-font-family: "Press Start 2P", fantasy;
+  /* --fantasy-font-family: "Press Start 2P", fantasy; */
+  --accent-font-family: "Press Start 2P", fantasy;
   --heart-color: #ff0000;
   --bg-img: repeating-linear-gradient(
     90deg,
