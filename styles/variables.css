@@ -24,7 +24,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --page-background: #fff;
-    --background-color: #e7e7e7;
+    --background-color: #d3d3d3;
     /* --background-color_1: #d3d3d3; */
     --background-color-start: #e7e7e7;
     --background-color-end: #1a1a1a;
