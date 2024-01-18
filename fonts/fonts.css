@@ -3,6 +3,7 @@
   src: url(./PressStart2P-Regular.woff) format("woff");
   font-weight: normal;
   font-display: swap;
+  /* line-height: 116.667% ; */
 }
 
 @font-face {
@@ -11,4 +12,5 @@
     url(./Inter-Variable.woff2) format("woff2-variations");
   font-weight: 400 785;
   font-display: swap;
+  /* line-height:  116.667% ; */
 }
