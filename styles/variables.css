@@ -3,13 +3,12 @@
   /* --fantasy-font-family: "Press Start 2P", fantasy; */
   --accent-font-family: "Press Start 2P", fantasy;
   --heart-color: #ff0000;  
-}
+  }
 
 @media (prefers-color-scheme: light) {
   :root {
     --page-background: #fff;
     --background-color: #d3d3d3;
-    /* --background-color_1: #d3d3d3; */
     --background-color-start: #e7e7e7;
     --background-color-end: #1a1a1a;
     --title-font-weight: "wght" 700;
@@ -18,15 +17,18 @@
     --text-color: #000;
     --mix-blend-color: var(--page-background);
     --stroke-color: var(--text-color);
-    --label-stroke-color: var(--page-background);
+    --label-stroke-color: var(--page-background);   
+    --background-image: repeating-linear-gradient(90deg, var(--background-color) 0 2px,rgba(0, 0, 0, 0) 2px 4px),
+                      repeating-linear-gradient(180deg, var(--background-color) 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+                      linear-gradient(180deg, var(--background-color-start) 0%, var(--background-color-end) 100%) ; 
+    } 
   }
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
     --page-background: #000;
-    --background-color:  #000;   /*var(--page-background); */
-    /* --background-color_1: #000; */
+    --background-color:  #000;   
     --background-color-start: #007f0c;
     --background-color-end: #004306;
     --title-font-weight: "wght" 785;
@@ -36,5 +38,8 @@
     --mix-blend-color: var(--text-color);
     --stroke-color: var(--text-color);
     --label-stroke-color: var(--page-background);
+    --background-image: repeating-linear-gradient(90deg, var(--background-color) 0 2px,rgba(0, 0, 0, 0) 2px 4px),
+                        repeating-linear-gradient(180deg, var(--background-color) 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+                        linear-gradient(180deg, var(--background-color-start) 0%, var(--background-color-end) 100%) ;
   }
 }
